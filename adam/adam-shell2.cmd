@@ -1,0 +1,1 @@
+spark-shell --conf spark.kryo.registrator=org.bdgenomics.adam.serialization.ADAMKryoRegistrator --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --class org.apache.spark.repl.Main --name Spark shell --jars %ADAM_HOME%/repo/adam_2.11-0.20.0.jar spark-shell

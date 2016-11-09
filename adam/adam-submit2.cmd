@@ -1,0 +1,1 @@
+spark-submit --conf spark.kryo.registrator=org.bdgenomics.adam.serialization.ADAMKryoRegistrator --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --class org.bdgenomics.adam.cli.ADAMMain %ADAM_HOME%/repo/adam_2.11-0.20.0.jar %*
